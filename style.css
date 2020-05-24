@@ -13,32 +13,138 @@ box-sizing: border-box;
 
 nav{
     display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 30px;
+    grid-template-columns: 50% 50%;
+    padding: 30px 100px;
+    position: fixed;
+    top: 0;
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    
 }
 
 #logo span{
     font-family: Ngaan;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 900;
 }
 
 
 #nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     text-align: center;
 }
 
 #nav a{
     text-decoration: none;
-    color: brown;
+    color: white;
     font-size: 20px;
     transition: 0.3s;
 }
 
 #nav a:hover{
-    color: black;
+    color: indianred;
     font-size: 22px;
+}
+
+/* 橫幅 */
+#banner {
+    background-image: url(./pix/noodles1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+#banner div{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#banner div hi, #banner div h4{
+    font-family: Ngaan;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#banner div h1 {
+    font-size: 180px;
+}
+
+#banner div h4 {
+    font-size: 40px;
+    text-align: left;
+}
+
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#about > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+}
+
+#about > div .img {
+    background-image: url(./pix/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#about > div p {
+    line-height: 2;
+    letter-spacing: 5px;
+    padding-right: 20px;
+}
+
+section h1 {
+    font-family: Ngaan;
+    margin-top: 60px;
+    font-size: 32px;
+}
+
+section hr {
+    margin-bottom: 40px;
+}
+
+#news ul {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    letter-spacing: none;
+}
+
+#news ul span {
+    font-size: 12px;
+    color: gray;
+    padding: 20px 0;
+}
+
+#news ul li {
+    font-size: 18px;
+    padding: 20px;
+}
+
+#news div {
+    text-align: right;
+}
+
+#news a {
+    text-decoration: none;
+    color: #252525;
+}
+
+#contact p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5;
 }
